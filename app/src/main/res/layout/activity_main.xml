@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo de entrada para o nome do personagem -->
+    <EditText
+        android:id="@+id/nomePersonagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Personagem" />
+
+    <!-- Seleção de raça -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione a Raça:" />
+
+    <Spinner
+        android:id="@+id/racaSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Pontos de Atributos -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distribua os pontos:" />
+
+    <!-- Exemplo para o atributo Força -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Força" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnForcaMenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txtForca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnForcaMais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+    </LinearLayout>
+
+    <!-- Repetir o bloco acima para outros atributos como Destreza, Inteligência, etc. -->
+
+    <!-- Exibir pontos restantes -->
+    <TextView
+        android:id="@+id/txtPontosRestantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontos Restantes: 27" />
+
+    <!-- Botão para criar o personagem -->
+    <Button
+        android:id="@+id/btnCriarPersonagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Personagem" />
+
+    <Button
+        android:id="@+id/btnGoToSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir para a Segunda Tela"/>
+
+
+
+</LinearLayout>
+
